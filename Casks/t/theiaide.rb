@@ -20,6 +20,7 @@ cask "theiaide" do
   depends_on macos: ">= :monterey"
 
   app "TheiaIDE.app"
+  binary "#{appdir}/TheiaIDE.app/Contents/MacOS/TheiaIDE", target: "theia"
 
   zap trash: [
     "~/.theia-ide",
